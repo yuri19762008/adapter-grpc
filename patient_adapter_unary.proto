@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+service PatientAdapterService{
+    // unary service
+    rpc get_patient(PatientID) returns (AdaptedPatient) {}
+}
+
+message PatientID{
+    string id = 1;
+}
+
+message AdaptedPatient{
+    string id = 1;
+    string name = 2;
+    string birth_date = 3;
+    string address = 4;
+    string health_care_system = 5;
+}
