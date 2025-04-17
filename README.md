@@ -5,3 +5,5 @@ Adapter for Talento Futuro. The adapter (patient_adapter.py) is a gRPC service t
 This external service is a FastAPI-based one.
 
 Remember to recompile protos with `$ python -m grpc_tools.protoc -I./ --python_out=. --grpc_python_out=. ./*.proto`
+
+Remember to recompile protos with `$ python -m grpc_tools.protoc -I./ --python_out=. --grpc_python_out=. ./patient_adapter_unary.proto`
